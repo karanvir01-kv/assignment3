@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Order Your Smoothie</h1>
+    <form id="smoothie-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="base">Base:</label>
+        <select id="base" name="base" required>
+            <option value="milk">Milk</option>
+            <option value="yogurt">Yogurt</option>
+            <option value="water">Water</option>
+            <option value="juice">Juice</option>
+        </select>
+
+        <label for="fruits">Fruits:</label>
+        <select id="fruits" name="fruits" multiple required>
+            <option value="banana">Banana</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="mango">Mango</option>
+            <option value="pineapple">Pineapple</option>
+        </select>
+
+        <label for="extras">Extras:</label>
+        <select id="extras" name="extras" multiple>
+            <option value="chia seeds">Chia Seeds</option>
+            <option value="protein powder">Protein Powder</option>
+            <option value="honey">Honey</option>
+            <option value="spinach">Spinach</option>
+        </select>
+
+        <button type="button" id="order-btn">Order</button>
+    </form>
+    <div id="order-summary"></div>
+    <script src="script.js"></script>
+</body>
+</html>
